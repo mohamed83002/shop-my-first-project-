@@ -1,0 +1,150 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.user-profile {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-profile p {
+    font-size: 1.2em;
+}
+
+.user-profile .flex {
+    margin-top: 10px;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+
+.message {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none; 
+    }
+}
+
+
+.products {
+    margin-top: 20px;
+}
+
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.box {
+    flex: 0 1 calc(16.66% - 20px); 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    padding: 17px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 250px; 
+}
+
+
+.box img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+input[type="number"] {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+    font-size: 16px;
+    text-align: center; 
+    transition: border-color 0.3s; 
+}
+
+input[type="number"]:focus {
+    border-color: #007bff; 
+    outline: none; 
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: auto; 
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    .box {
+        flex: 0 1 calc(33.33% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        flex: 0 1 calc(50% - 20px); 
+    }
+}
